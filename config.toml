@@ -1,0 +1,15 @@
+[config]
+theme_mode = 'dark'
+
+[templates.kitty]
+input_path = '~/.config/matugen/templates/kitty.conf'
+
+output_path = '~/.config/kitty/colors.conf'
+
+post_hook = 'killall -USR1 kitty'
+
+[templates.colors]
+input_path = "~/.config/matugen/templates/colors.lua"
+output_path = "~/.config/hypr/colors.lua"
+
+post_hook = "hyprctl reload"
